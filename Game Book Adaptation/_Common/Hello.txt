@@ -1,0 +1,5 @@
+Ici on met tous nos fichiers qui seront en commun parmi nos solutions.
+
+Donc quasimment toutes nos classes etc...
+
+Si tu en testes une nouvelle, tu la crées dans ton projet et quand tu es sûr qu'elle marche tu la mets dans _Common
