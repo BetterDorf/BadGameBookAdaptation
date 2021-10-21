@@ -10,7 +10,7 @@ enum crew_job
 };
 
 
-class crew : basic
+class crew : public basic
 {
 	int endurance_max_ = 0;
 	crew_job job_;
