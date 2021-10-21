@@ -139,13 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\_Common\dice.cpp" />
+    <ClCompile Include="book.cpp" />
     <ClCompile Include="chapter_node.cpp" />
-    <ClCompile Include="dice.cpp" />
     <ClCompile Include="Projet Nem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\_Common\dice.h" />
+    <ClInclude Include="book.h" />
     <ClInclude Include="chapter_node.h" />
-    <ClInclude Include="dice.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

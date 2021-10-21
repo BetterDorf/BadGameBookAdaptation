@@ -1,6 +1,7 @@
 #pragma once
 #include <random>
 
+//Usage: create only 1 instance of the class and throw dices from its methods.
 class dices
 {
 	std::uniform_int_distribution<> dice_range_;

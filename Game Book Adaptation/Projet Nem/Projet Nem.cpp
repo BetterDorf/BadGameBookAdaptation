@@ -1,13 +1,15 @@
 #include <iostream>
-#include "dice.h"
+#include "../_Common/dice.h"
+#include  "book.h"
 
 using namespace std;
 
 int main()
 {
-    dices dice;
-    for (int i = 0; i < 100; i++)
-    {
-        cout << dice.exploding_dice() << endl;
-    }
+	book story;
+	int next_chapter = story.chapters.begin()->second.play();
+	do
+	{
+		next_chapter = story.chapters.at(next_chapter).play();
+	} while (true);
 } 
