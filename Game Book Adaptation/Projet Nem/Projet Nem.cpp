@@ -1,6 +1,13 @@
 #include <iostream>
+#include "dice.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    dices dice;
+    for (int i = 0; i < 100; i++)
+    {
+        cout << dice.exploding_dice() << endl;
+    }
 } 
