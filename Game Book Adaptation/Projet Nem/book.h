@@ -4,6 +4,7 @@
 
 class book
 {
+//Holds all the chapters
 public:
 	std::map<int, chapter_node> chapters{
 		{1, chapter_node("1 is the place you are at", {200})},
