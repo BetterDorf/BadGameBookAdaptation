@@ -11,8 +11,11 @@ public:
 	int get_endu();
 	int get_habil();
 	
-	bool lose_life(int amount);
+	void lose_life(int amount);
+
+	bool is_dead();
 	
+	void heal(int amount);
 };
 
 
