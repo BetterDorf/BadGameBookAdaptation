@@ -1,10 +1,10 @@
 #pragma once
 #include "basic.h"
+#include "gentil.h"
 
-
-class ship : basic
+class ship : gentil
 {
-	int endurance_max_ = 0;
+	
 public:
 	ship(int endu, int habil);
 };

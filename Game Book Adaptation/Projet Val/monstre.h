@@ -3,6 +3,7 @@
 
 class monstre : basic 
 {
+	using basic::basic;
 
 };
 

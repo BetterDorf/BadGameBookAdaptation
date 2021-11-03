@@ -1,5 +1,6 @@
 #pragma once
 #include "basic.h"
+#include "gentil.h"
 enum crew_job
 {
 	commandant,
@@ -10,11 +11,12 @@ enum crew_job
 };
 
 
-class crew : public basic
+class crew : public gentil
 {
-	int endurance_max_ = 0;
 	crew_job job_;
 public:
 	crew(int endu, int habil,crew_job);
+	
+	void die() override;
 };
 

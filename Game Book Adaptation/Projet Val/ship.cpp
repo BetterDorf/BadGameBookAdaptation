@@ -1,10 +1,10 @@
 #include "ship.h"
+#include "gentil.h"
 
 
-
-ship::ship(int endu, int habil) : basic(endu, habil)
+ship::ship(int endu, int habil) : gentil(endu, habil)
 {
-	endurance_max_ = endu;
+	
 
 	std::cout << "j'ai ete cree" << std::endl;
 }
