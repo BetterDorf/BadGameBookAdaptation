@@ -1,7 +1,9 @@
 #pragma once
 #include "basic.h"
 
-class monstre : public basic 
+class monstre : basic 
 {
 	using basic::basic;
+
 };
+
