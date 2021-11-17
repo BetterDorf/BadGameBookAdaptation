@@ -139,14 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\_Common\basic.cpp" />
     <ClCompile Include="..\_Common\dice.cpp" />
+    <ClCompile Include="..\_Common\monstre.cpp" />
     <ClCompile Include="book.cpp" />
     <ClCompile Include="chapter_fight.cpp" />
     <ClCompile Include="chapter_node.cpp" />
     <ClCompile Include="Projet Nem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\_Common\basic.h" />
     <ClInclude Include="..\_Common\dice.h" />
+    <ClInclude Include="..\_Common\monstre.h" />
     <ClInclude Include="book.h" />
     <ClInclude Include="chapter_fight.h" />
     <ClInclude Include="chapter_node.h" />
