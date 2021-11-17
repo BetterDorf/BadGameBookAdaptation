@@ -1,7 +1,8 @@
 #pragma once
 #include "basic.h"
 #include <iostream>
-#include "../_Common/dice.h"
+
+
 
 class gentil : public basic
 {

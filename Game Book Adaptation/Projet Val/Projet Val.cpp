@@ -2,14 +2,19 @@
 #include "crew.h"
 #include "ship.h"
 #include <vector>
+#include "../_Common/dice.h"
+
+
 int main()
 {
 
-	crew michel = crew(1, 1, commandant);
-	crew michelle = crew(1, 1, medic);
-	crew Patrik = crew(1, 1, sientifique);
-	crew jean_chie = crew(1, 1, malabar);
-	crew jean_pleur = crew(1, 1, pilote);
+	dices des;
+
+	crew michel = crew(des.dices_total(1)/2+1, des.dices_total(5), commandant);
+	crew michelle = crew(des.dices_total(1)/2+1, des.dices_total(5), medic);
+	crew Patrik = crew(des.dices_total(1)/2+1, des.dices_total(5), sientifique);
+	crew jean_chie = crew(des.dices_total(1)/2+1, des.dices_total(5), malabar);
+	crew jean_pleur = crew(des.dices_total(1)/2+1, des.dices_total(5), pilote);
 
 	ship vaisseau = ship(1, 1);
 

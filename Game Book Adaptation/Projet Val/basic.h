@@ -7,7 +7,7 @@ protected:
 	int habillite_ = 0;
 	int endurance_ = 0;
 public:
-	basic();
+	basic(int endu, int habil);
 	int get_endu();
 	int get_habil();
 	

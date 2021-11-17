@@ -16,6 +16,8 @@ class crew : public gentil
 	crew_job job_;
 public:
 	crew(int endu, int habil,crew_job);
+	 
+	bool assist = false; 
 	
 	void die() override;
 };
