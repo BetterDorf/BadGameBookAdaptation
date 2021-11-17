@@ -2,7 +2,7 @@
 #include "basic.h"
 #include "gentil.h"
 
-class ship : gentil
+class ship : public gentil
 {
 	
 public:

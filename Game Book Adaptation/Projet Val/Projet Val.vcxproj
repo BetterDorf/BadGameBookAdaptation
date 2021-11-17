@@ -139,21 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\_Common\basic.cpp" />
+    <ClCompile Include="..\_Common\Crew.cpp" />
     <ClCompile Include="..\_Common\dice.cpp" />
-    <ClCompile Include="basic.cpp" />
-    <ClCompile Include="Crew.cpp" />
-    <ClCompile Include="monstre.cpp" />
+    <ClCompile Include="..\_Common\gentil.cpp" />
+    <ClCompile Include="..\_Common\monstre.cpp" />
+    <ClCompile Include="..\_Common\ship.cpp" />
     <ClCompile Include="Projet Val.cpp" />
-    <ClCompile Include="ship.cpp" />
-    <ClCompile Include="gentil.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\_Common\Hello.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_Common\basic.h" />
+    <ClInclude Include="..\_Common\crew.h" />
     <ClInclude Include="..\_Common\dice.h" />
-    <ClInclude Include="basic.h" />
-    <ClInclude Include="crew.h" />
-    <ClInclude Include="gentil.h" />
-    <ClInclude Include="monstre.h" />
-    <ClInclude Include="ship.h" />
+    <ClInclude Include="..\_Common\gentil.h" />
+    <ClInclude Include="..\_Common\monstre.h" />
+    <ClInclude Include="..\_Common\ship.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
