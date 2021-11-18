@@ -16,3 +16,13 @@ void crew::die()
 
 	assist = true; 
 }
+
+const crew_job crew::getJob()
+{
+	return job_;
+}
+
+const bool crew::isAssist()
+{
+	return assist;
+}

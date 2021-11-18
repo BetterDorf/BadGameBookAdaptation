@@ -15,11 +15,13 @@ enum crew_job
 class crew : public gentil
 {
 	crew_job job_;
+	bool assist = false;
 public:
 	crew(int endu, int habil, crew_job);
-	 
-	bool assist = false; 
-	
+
+	const bool isAssist();
+	const crew_job getJob();
+
 	void die() override;
 };
 

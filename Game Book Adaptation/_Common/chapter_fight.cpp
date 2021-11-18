@@ -1,6 +1,7 @@
 #include "chapter_fight.h"
 #include "../_Common/dice.h"
 #include "book.h"
+#include "crew.h"
 
 chapter_fight::chapter_fight(fight_type type, std::string text, std::vector<int> destinations,std::vector<monstre> monstres)
 	: chapter_node(text, destinations)
@@ -61,8 +62,19 @@ int chapter_fight::play(std::vector<crew>& crews, ship& spaceShip)
 }
 
 
-std::vector<int> chapter_fight::chooseFighters(std::vector<gentil>& crews)
+std::vector<int> chapter_fight::chooseFighters(std::vector<crew>& crews)
 {
 	std::vector<int> validFighters;
+	//Find out all non-assisstant crew member
+	for (int i = 0; i < crews.size() ; i++)
+	{
+		if (!crews.at(i).isAssist())
+		{
+			validFighters.emplace_back(i);
+		}
+	}
+
+	//Show the possible fighters
+
 	return std::vector<int> {1};
 }

@@ -10,8 +10,11 @@
 
 int main()
 {
+	//Create the dice
 	dices dice;
+
 	//Make the crew and ship
+
 	ship spaceShip = ship(dice.dices_total(HEALTH_DICE) + HEALTH_SCORE, dice.dices_total(HABIL_DICE) / 2 + HABIL_SCORE);
 	std::cout << spaceShip.get_habil() << " " << spaceShip.get_endu() << '\n';
 	std::vector<crew> crews;
