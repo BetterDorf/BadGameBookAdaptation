@@ -14,14 +14,17 @@ int main()
 	dices dice;
 
 	//Make the crew and ship
-
+	//spaceship
 	ship spaceShip = ship(dice.dices_total(HEALTH_DICE) + HEALTH_SCORE, dice.dices_total(HABIL_DICE) / 2 + HABIL_SCORE);
-	std::cout << spaceShip.get_habil() << " " << spaceShip.get_endu() << '\n';
+
+	//Crew
 	std::vector<crew> crews;
 
+	//Make each crew with a different job
 	for (int i_job = 0; i_job != last; i_job++)
 	{
-		crew_job job = static_cast<crew_job>(i_job);
+		crew_job job = static_cast<crew_job>(i_job); //Set the job
+		//Add one crewmember with that job
 		crews.emplace_back(dice.dices_total(HEALTH_DICE) + HEALTH_SCORE, dice.dices_total(HABIL_DICE) / 2 + HABIL_SCORE, job);
 	}
 
