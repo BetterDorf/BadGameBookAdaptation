@@ -31,12 +31,15 @@ int main()
 
 
 	//Play the story
+	//play the first chapter which gives us back the next chapter's index
 	int next_chapter = story.chapters.begin()->second->play(crews, spaceShip);
 	do
 	{
+		//Check if the chapter index we have is valid
 		if (story.chapters.find(next_chapter) == story.chapters.end())
 			break;
 
+		//Play the next chapter and get a new next chapter value
 		next_chapter = story.chapters.at(next_chapter)->play(crews, spaceShip);
 	} while (next_chapter >= 0);
 } 

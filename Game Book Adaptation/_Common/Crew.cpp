@@ -26,3 +26,17 @@ const bool crew::isAssist()
 {
 	return assist;
 }
+
+std::string crew::jobToString(crew_job job)
+{
+	switch (job)
+	{
+	case commandant: return "commandant";
+	case medic: return "medic";
+	case scientifique: return "scientifique";
+	case malabar: return "malabar";
+	case pilote: return "pilote";
+	case last: return "NOT SUPPOSED TO BE PRINTED/INVALID JOB";
+	default: ;
+	}
+}

@@ -5,7 +5,7 @@ enum crew_job
 {
 	commandant = 0,
 	medic,
-	sientifique,
+	scientifique,
 	malabar,
 	pilote,
 	last
@@ -21,6 +21,8 @@ public:
 
 	const bool isAssist();
 	const crew_job getJob();
+
+	static std::string jobToString(crew_job job);
 
 	void die() override;
 };

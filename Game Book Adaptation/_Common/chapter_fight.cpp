@@ -2,6 +2,7 @@
 #include "../_Common/dice.h"
 #include "book.h"
 #include "crew.h"
+#include "Global_Variables.h"
 
 chapter_fight::chapter_fight(fight_type type, std::string text, std::vector<int> destinations,std::vector<monstre> monstres)
 	: chapter_node(text, destinations)
@@ -74,7 +75,22 @@ std::vector<int> chapter_fight::chooseFighters(std::vector<crew>& crews)
 		}
 	}
 
-	//Show the possible fighters
+	//if there's only 3 or less fighters, just return all valid ones
+	if (validFighters.size() <= FIGHTERS_NUM)
+		return validFighters;
 
-	return std::vector<int> {1};
+	//Show the possible fighters and select them
+	std::vector<int> selectedFighters;
+	do
+	{
+		std::cout << "Qui va se battre?\n";
+		//print the crew
+		for (int i = 0; i < validFighters.size(); i++)
+		{
+			std::cout << crew::jobToString(crews.at(i).getJob()) << '\n';
+		}
+	} while (selectedFighters.size() < FIGHTERS_NUM);
+
+
+		return selectedFighters;
 }
