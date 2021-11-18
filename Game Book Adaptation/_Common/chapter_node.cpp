@@ -14,8 +14,8 @@ int chapter_node::play(std::vector<crew>& crews, ship& spaceShip)
 	cout << this->text_ << endl;
 
 	//If there is no option, send back the only destination
-	//if (destinations_.size() == 1)
-	//	return destinations_.at(0);
+	if (destinations_.size() == 1)
+		return destinations_.at(0);
 
 	//Give the user the choice
 	return get_destination(destinations_);

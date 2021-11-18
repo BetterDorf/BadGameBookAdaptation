@@ -22,7 +22,7 @@ public:
 	const bool isAssist();
 	const crew_job getJob();
 
-	static std::string jobToString(crew_job job);
+	const static std::string jobToString(crew_job job);
 
 	void die() override;
 };

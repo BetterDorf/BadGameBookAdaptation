@@ -27,7 +27,7 @@ const bool crew::isAssist()
 	return assist;
 }
 
-std::string crew::jobToString(crew_job job)
+const std::string crew::jobToString(crew_job job)
 {
 	switch (job)
 	{
