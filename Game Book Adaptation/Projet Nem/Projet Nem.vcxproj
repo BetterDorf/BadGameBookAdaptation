@@ -140,20 +140,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\_Common\basic.cpp" />
+    <ClCompile Include="..\_Common\book.cpp" />
+    <ClCompile Include="..\_Common\chapter_fight.cpp" />
+    <ClCompile Include="..\_Common\chapter_node.cpp" />
+    <ClCompile Include="..\_Common\Crew.cpp" />
     <ClCompile Include="..\_Common\dice.cpp" />
+    <ClCompile Include="..\_Common\gentil.cpp" />
     <ClCompile Include="..\_Common\monstre.cpp" />
-    <ClCompile Include="book.cpp" />
-    <ClCompile Include="chapter_fight.cpp" />
-    <ClCompile Include="chapter_node.cpp" />
+    <ClCompile Include="..\_Common\ship.cpp" />
     <ClCompile Include="Projet Nem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\_Common\basic.h" />
+    <ClInclude Include="..\_Common\book.h" />
+    <ClInclude Include="..\_Common\chapter_fight.h" />
+    <ClInclude Include="..\_Common\chapter_node.h" />
+    <ClInclude Include="..\_Common\crew.h" />
     <ClInclude Include="..\_Common\dice.h" />
+    <ClInclude Include="..\_Common\gentil.h" />
+    <ClInclude Include="..\_Common\Global_Variables.h" />
     <ClInclude Include="..\_Common\monstre.h" />
-    <ClInclude Include="book.h" />
-    <ClInclude Include="chapter_fight.h" />
-    <ClInclude Include="chapter_node.h" />
+    <ClInclude Include="..\_Common\ship.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\_Common\Hello.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

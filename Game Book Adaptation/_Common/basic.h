@@ -10,8 +10,9 @@ public:
 	basic(int endu, int habil);
 	int get_endu();
 	int get_habil();
-	
-	void lose_life(int amount);
+
+	//lose life and return true if the damage was lethal
+	bool lose_life(int amount);
 
 	bool is_dead();
 	virtual void die() {};

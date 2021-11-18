@@ -3,11 +3,12 @@
 #include "gentil.h"
 enum crew_job
 {
-	commandant,
+	commandant = 0,
 	medic,
 	sientifique,
 	malabar,
-	pilote, 
+	pilote,
+	last
 };
 
 
@@ -15,7 +16,7 @@ class crew : public gentil
 {
 	crew_job job_;
 public:
-	crew(int endu, int habil,crew_job);
+	crew(int endu, int habil, crew_job);
 	 
 	bool assist = false; 
 	

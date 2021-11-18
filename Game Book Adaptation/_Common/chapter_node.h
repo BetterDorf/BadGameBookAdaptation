@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include "../_Common/crew.h"
+#include "../_Common/ship.h"
 
 class chapter_node
 {
@@ -13,5 +15,5 @@ protected:
 	int get_destination(std::vector<int> valid_destis);
 public:
 	chapter_node(std::string text, std::vector<int> destinations);
-	int virtual play();
+	int virtual play(std::vector<crew>& crews, ship& spaceShip);
 }; 

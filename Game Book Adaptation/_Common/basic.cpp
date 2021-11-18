@@ -16,10 +16,14 @@ int basic::get_habil()
 	return habillite_;
 }
 
-void basic::lose_life(int amount)
+bool basic::lose_life(int amount)
 {
 	endurance_ -= amount;
 
+	if (is_dead())
+		die();
+
+	return is_dead();
 }
 
 bool basic::is_dead()
